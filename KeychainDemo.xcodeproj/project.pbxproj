@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F295DA2A1997D14400BFE1B0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F295DA291997D14400BFE1B0 /* ShareViewController.swift */; };
+		F295DA2C1997D14400BFE1B0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F295DA2B1997D14400BFE1B0 /* MainInterface.storyboard */; };
+		F295DA2F1997D14400BFE1B0 /* ShareDemo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F295DA251997D14400BFE1B0 /* ShareDemo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F295DA351997D15300BFE1B0 /* DDHKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9A8B91997AC81002575FD /* DDHKeychain.framework */; };
 		F2B9A8981997AC4A002575FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9A8971997AC4A002575FD /* AppDelegate.swift */; };
 		F2B9A89A1997AC4A002575FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9A8991997AC4A002575FD /* ViewController.swift */; };
 		F2B9A89D1997AC4A002575FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9A89B1997AC4A002575FD /* Main.storyboard */; };
@@ -17,14 +21,23 @@
 		F2B9A8CD1997AC81002575FD /* DDHKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9A8B91997AC81002575FD /* DDHKeychain.framework */; };
 		F2B9A8CE1997AC81002575FD /* DDHKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9A8B91997AC81002575FD /* DDHKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2B9A8D91997AD03002575FD /* DDHKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9A8D81997AD03002575FD /* DDHKeychain.swift */; };
-		F2B9A8E11997B071002575FD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9A8E01997B071002575FD /* NotificationCenter.framework */; };
-		F2B9A8E61997B071002575FD /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9A8E51997B071002575FD /* TodayViewController.swift */; };
-		F2B9A8E81997B071002575FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B9A8E71997B071002575FD /* MainInterface.storyboard */; };
-		F2B9A8EB1997B071002575FD /* Password.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F2B9A8DE1997B071002575FD /* Password.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F2B9A8F21997B08C002575FD /* DDHKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B9A8B91997AC81002575FD /* DDHKeychain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F295DA2D1997D14400BFE1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B9A88A1997AC4A002575FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F295DA241997D14400BFE1B0;
+			remoteInfo = ShareDemo;
+		};
+		F295DA301997D14400BFE1B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B9A88A1997AC4A002575FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F295DA241997D14400BFE1B0;
+			remoteInfo = ShareDemo;
+		};
 		F2B9A8A51997AC4B002575FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F2B9A88A1997AC4A002575FD /* Project object */;
@@ -53,20 +66,6 @@
 			remoteGlobalIDString = F2B9A8B81997AC81002575FD;
 			remoteInfo = DDHKeychain;
 		};
-		F2B9A8E91997B071002575FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2B9A88A1997AC4A002575FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2B9A8DD1997B071002575FD;
-			remoteInfo = Password;
-		};
-		F2B9A8EC1997B071002575FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2B9A88A1997AC4A002575FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2B9A8DD1997B071002575FD;
-			remoteInfo = Password;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,7 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F2B9A8EB1997B071002575FD /* Password.appex in Embed App Extensions */,
+				F295DA2F1997D14400BFE1B0 /* ShareDemo.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +94,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F217FBB81997D62D00AFEF00 /* ShareDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShareDemo.entitlements; sourceTree = "<group>"; };
+		F295DA251997D14400BFE1B0 /* ShareDemo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareDemo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F295DA281997D14400BFE1B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F295DA291997D14400BFE1B0 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F295DA2B1997D14400BFE1B0 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		F2B9A8921997AC4A002575FD /* KeychainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B9A8961997AC4A002575FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B9A8971997AC4A002575FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,16 +115,19 @@
 		F2B9A8C81997AC81002575FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B9A8C91997AC81002575FD /* DDHKeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDHKeychainTests.swift; sourceTree = "<group>"; };
 		F2B9A8D81997AD03002575FD /* DDHKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHKeychain.swift; sourceTree = "<group>"; };
-		F2B9A8DE1997B071002575FD /* Password.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Password.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B9A8E01997B071002575FD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		F2B9A8E41997B071002575FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2B9A8E51997B071002575FD /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		F2B9A8E71997B071002575FD /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		F2B9A8F31997B160002575FD /* KeychainDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KeychainDemo.entitlements; sourceTree = "<group>"; };
-		F2B9A8F41997B175002575FD /* Password.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Password.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F295DA221997D14400BFE1B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F295DA351997D15300BFE1B0 /* DDHKeychain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2B9A88F1997AC4A002575FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,18 +157,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B9A8DB1997B071002575FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2B9A8F21997B08C002575FD /* DDHKeychain.framework in Frameworks */,
-				F2B9A8E11997B071002575FD /* NotificationCenter.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F295DA261997D14400BFE1B0 /* ShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F217FBB81997D62D00AFEF00 /* ShareDemo.entitlements */,
+				F295DA291997D14400BFE1B0 /* ShareViewController.swift */,
+				F295DA2B1997D14400BFE1B0 /* MainInterface.storyboard */,
+				F295DA271997D14400BFE1B0 /* Supporting Files */,
+			);
+			path = ShareDemo;
+			sourceTree = "<group>";
+		};
+		F295DA271997D14400BFE1B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F295DA281997D14400BFE1B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F2B9A8891997AC4A002575FD = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +186,7 @@
 				F2B9A8A71997AC4B002575FD /* KeychainDemoTests */,
 				F2B9A8BA1997AC81002575FD /* DDHKeychain */,
 				F2B9A8C61997AC81002575FD /* DDHKeychainTests */,
-				F2B9A8E21997B071002575FD /* Password */,
+				F295DA261997D14400BFE1B0 /* ShareDemo */,
 				F2B9A8DF1997B071002575FD /* Frameworks */,
 				F2B9A8931997AC4A002575FD /* Products */,
 			);
@@ -182,7 +199,7 @@
 				F2B9A8A41997AC4B002575FD /* KeychainDemoTests.xctest */,
 				F2B9A8B91997AC81002575FD /* DDHKeychain.framework */,
 				F2B9A8C31997AC81002575FD /* DDHKeychainTests.xctest */,
-				F2B9A8DE1997B071002575FD /* Password.appex */,
+				F295DA251997D14400BFE1B0 /* ShareDemo.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,25 +285,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F2B9A8E21997B071002575FD /* Password */ = {
-			isa = PBXGroup;
-			children = (
-				F2B9A8F41997B175002575FD /* Password.entitlements */,
-				F2B9A8E51997B071002575FD /* TodayViewController.swift */,
-				F2B9A8E71997B071002575FD /* MainInterface.storyboard */,
-				F2B9A8E31997B071002575FD /* Supporting Files */,
-			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		F2B9A8E31997B071002575FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F2B9A8E41997B071002575FD /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -301,6 +299,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F295DA241997D14400BFE1B0 /* ShareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F295DA341997D14400BFE1B0 /* Build configuration list for PBXNativeTarget "ShareDemo" */;
+			buildPhases = (
+				F295DA211997D14400BFE1B0 /* Sources */,
+				F295DA221997D14400BFE1B0 /* Frameworks */,
+				F295DA231997D14400BFE1B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareDemo;
+			productName = ShareDemo;
+			productReference = F295DA251997D14400BFE1B0 /* ShareDemo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F2B9A8911997AC4A002575FD /* KeychainDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B9A8AE1997AC4B002575FD /* Build configuration list for PBXNativeTarget "KeychainDemo" */;
@@ -316,8 +331,8 @@
 			dependencies = (
 				F2B9A8CC1997AC81002575FD /* PBXTargetDependency */,
 				F2B9A8D01997AC81002575FD /* PBXTargetDependency */,
-				F2B9A8EA1997B071002575FD /* PBXTargetDependency */,
-				F2B9A8ED1997B071002575FD /* PBXTargetDependency */,
+				F295DA2E1997D14400BFE1B0 /* PBXTargetDependency */,
+				F295DA311997D14400BFE1B0 /* PBXTargetDependency */,
 			);
 			name = KeychainDemo;
 			productName = KeychainDemo;
@@ -378,23 +393,6 @@
 			productReference = F2B9A8C31997AC81002575FD /* DDHKeychainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F2B9A8DD1997B071002575FD /* Password */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2B9A8EE1997B071002575FD /* Build configuration list for PBXNativeTarget "Password" */;
-			buildPhases = (
-				F2B9A8DA1997B071002575FD /* Sources */,
-				F2B9A8DB1997B071002575FD /* Frameworks */,
-				F2B9A8DC1997B071002575FD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Password;
-			productName = Password;
-			productReference = F2B9A8DE1997B071002575FD /* Password.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,6 +402,15 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Dominik Hauser";
 				TargetAttributes = {
+					F295DA241997D14400BFE1B0 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = Q6PD97MRX4;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
 					F2B9A8911997AC4A002575FD = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = Q6PD97MRX4;
@@ -424,15 +431,6 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = F2B9A8911997AC4A002575FD;
 					};
-					F2B9A8DD1997B071002575FD = {
-						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = Q6PD97MRX4;
-						SystemCapabilities = {
-							com.apple.Keychain = {
-								enabled = 1;
-							};
-						};
-					};
 				};
 			};
 			buildConfigurationList = F2B9A88D1997AC4A002575FD /* Build configuration list for PBXProject "KeychainDemo" */;
@@ -452,12 +450,20 @@
 				F2B9A8A31997AC4B002575FD /* KeychainDemoTests */,
 				F2B9A8B81997AC81002575FD /* DDHKeychain */,
 				F2B9A8C21997AC81002575FD /* DDHKeychainTests */,
-				F2B9A8DD1997B071002575FD /* Password */,
+				F295DA241997D14400BFE1B0 /* ShareDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F295DA231997D14400BFE1B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F295DA2C1997D14400BFE1B0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2B9A8901997AC4A002575FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,17 +494,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B9A8DC1997B071002575FD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2B9A8E81997B071002575FD /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F295DA211997D14400BFE1B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F295DA2A1997D14400BFE1B0 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2B9A88E1997AC4A002575FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,17 +538,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2B9A8DA1997B071002575FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2B9A8E61997B071002575FD /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F295DA2E1997D14400BFE1B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F295DA241997D14400BFE1B0 /* ShareDemo */;
+			targetProxy = F295DA2D1997D14400BFE1B0 /* PBXContainerItemProxy */;
+		};
+		F295DA311997D14400BFE1B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F295DA241997D14400BFE1B0 /* ShareDemo */;
+			targetProxy = F295DA301997D14400BFE1B0 /* PBXContainerItemProxy */;
+		};
 		F2B9A8A61997AC4B002575FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F2B9A8911997AC4A002575FD /* KeychainDemo */;
@@ -563,16 +571,6 @@
 			target = F2B9A8B81997AC81002575FD /* DDHKeychain */;
 			targetProxy = F2B9A8CF1997AC81002575FD /* PBXContainerItemProxy */;
 		};
-		F2B9A8EA1997B071002575FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2B9A8DD1997B071002575FD /* Password */;
-			targetProxy = F2B9A8E91997B071002575FD /* PBXContainerItemProxy */;
-		};
-		F2B9A8ED1997B071002575FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2B9A8DD1997B071002575FD /* Password */;
-			targetProxy = F2B9A8EC1997B071002575FD /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -587,6 +585,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F295DA321997D14400BFE1B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareDemo/ShareDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F295DA331997D14400BFE1B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareDemo/ShareDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ShareDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		F2B9A8AC1997AC4B002575FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -731,6 +761,7 @@
 		F2B9A8D21997AC81002575FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -756,6 +787,7 @@
 		F2B9A8D31997AC81002575FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -805,41 +837,18 @@
 			};
 			name = Release;
 		};
-		F2B9A8EF1997B071002575FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Password/Password.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Password/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F2B9A8F01997B071002575FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Password/Password.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Password/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F295DA341997D14400BFE1B0 /* Build configuration list for PBXNativeTarget "ShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F295DA321997D14400BFE1B0 /* Debug */,
+				F295DA331997D14400BFE1B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F2B9A88D1997AC4A002575FD /* Build configuration list for PBXProject "KeychainDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -856,6 +865,7 @@
 				F2B9A8B01997AC4B002575FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B9A8B11997AC4B002575FD /* Build configuration list for PBXNativeTarget "KeychainDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -864,6 +874,7 @@
 				F2B9A8B31997AC4B002575FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B9A8D11997AC81002575FD /* Build configuration list for PBXNativeTarget "DDHKeychain" */ = {
 			isa = XCConfigurationList;
@@ -872,6 +883,7 @@
 				F2B9A8D31997AC81002575FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B9A8D51997AC81002575FD /* Build configuration list for PBXNativeTarget "DDHKeychainTests" */ = {
 			isa = XCConfigurationList;
@@ -880,14 +892,7 @@
 				F2B9A8D71997AC81002575FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		F2B9A8EE1997B071002575FD /* Build configuration list for PBXNativeTarget "Password" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2B9A8EF1997B071002575FD /* Debug */,
-				F2B9A8F01997B071002575FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
