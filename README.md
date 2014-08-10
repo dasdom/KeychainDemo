@@ -23,3 +23,8 @@ App.net: [@dasdom](https://alpha.app.net/dasdom)
 Twitter: [@dasdom](https://twitter.com/dasdom)
 
 Mail: [dominik.hauser@dasdom.de](mailto:dominik.hauser@dasdom.de)
+
+Licence
+-------
+
+[WTFPL](http://www.wtfpl.net)
