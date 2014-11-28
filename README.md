@@ -10,10 +10,10 @@ The keychain access is implemented as a basic demo class within a framework.
 
 **Don't use this class outside of this demo. It's meant only for demo puposes. There is no error handling, for example.**
 
-Today Extension
+Share Extension
 ---------------
 
-In this demo a today extension is used to show that the keychain is shared between the App and it's extension. This should also work with share extensions.
+A share extension is used to demonstrate the possibility to share keychains.
 
 Contact
 -------

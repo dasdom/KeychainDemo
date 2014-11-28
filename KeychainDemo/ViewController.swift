@@ -9,20 +9,13 @@
 import UIKit
 import DDHKeychain
 
-class ViewController: UIViewController {
-                            
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        DDHKeychain.setPassword("AwesomePassword", account: "SharedAccount")
-    }
+class ViewController: UIViewController, UITextFieldDelegate {
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+        DDHKeychain.setPassword(textField.text, account: "SharedAccount")
+        textField.resignFirstResponder()
+        return false
     }
-
 
 }
 
