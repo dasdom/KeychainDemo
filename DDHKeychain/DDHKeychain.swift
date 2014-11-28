@@ -11,38 +11,40 @@ import Foundation
 public class DDHKeychain {
     
     private class func secClassGenericPassword() -> String {
-        return kSecClassGenericPassword.takeRetainedValue() as String
+        //        return kSecClassGenericPassword.takeRetainedValue() as String
+        return NSString(format: kSecClassGenericPassword)
     }
     
     private class func secClass() -> String {
-        return kSecClass.takeRetainedValue() as String
+        //        return kSecClass.takeRetainedValue() as String
+        return NSString(format: kSecClass)
     }
     
     private class func secAttrService() -> String {
-        return kSecAttrService.takeRetainedValue() as String
+        //        return kSecAttrService.takeRetainedValue() as String
+        return NSString(format: kSecAttrService)
     }
     
     private class func secAttrAccount() -> String {
-        return kSecAttrAccount.takeRetainedValue() as String
+        //        return kSecAttrAccount.takeRetainedValue() as String
+        return NSString(format: kSecAttrAccount)
     }
     
     private class func secValueData() -> String {
-        return kSecValueData.takeRetainedValue() as String
+        //        return kSecValueData.takeRetainedValue() as String
+        return NSString(format: kSecValueData)
     }
     
     private class func secReturnData() -> String {
-        return kSecReturnData.takeRetainedValue() as String
+        //        return kSecReturnData.takeRetainedValue() as String
+        return NSString(format: kSecReturnData)
     }
+
     
     public class func setPassword(password: String, account: String, service: String = "kDDHDefaultService") {
         var secret: NSData = password.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-        //        let kSecClassGenericPasswordSwift: String = kSecClassGenericPassword.takeRetainedValue() as String
         let objects: Array = [secClassGenericPassword(), service, account, secret]
         
-        //        let kSecClassSwift: NSString = kSecClass.takeRetainedValue() as NSString
-        //        let kSecAttrServiceSwift: NSString = kSecAttrService.takeRetainedValue() as NSString
-        //        let kSecAttrAccountSwift: NSString = kSecAttrAccount.takeRetainedValue() as NSString
-        //        let kSecValueDataSwift: NSString = kSecValueData.takeRetainedValue() as NSString
         let keys: Array = [secClass(), secAttrService(), secAttrAccount(), secValueData()]
         
         let query = NSDictionary(objects: objects, forKeys: keys)
@@ -57,18 +59,14 @@ public class DDHKeychain {
         let queryAttributes = NSDictionary(objects: [secClassGenericPassword(), service, account, true], forKeys: [secClass(), secAttrService(), secAttrAccount(), secReturnData()])
         
         
-//        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
-            var dataTypeRef : Unmanaged<AnyObject>?
-            let status = SecItemCopyMatching(queryAttributes, &dataTypeRef);
-            
-            let retrievedData : NSData = dataTypeRef!.takeRetainedValue() as NSData
-            
-            let password = NSString(data: retrievedData, encoding: NSUTF8StringEncoding)
-            
-            return password as String
-//        })
+        var dataTypeRef : Unmanaged<AnyObject>?
+        let status = SecItemCopyMatching(queryAttributes, &dataTypeRef);
         
-//        return nil
+        let retrievedData : NSData = dataTypeRef!.takeRetainedValue() as NSData
+        
+        let password = NSString(data: retrievedData, encoding: NSUTF8StringEncoding)
+        
+        return password as String
     }
     
 }
